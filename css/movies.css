@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font for the body */
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    position: fixed; /* Fixed position to keep the header on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    z-index: 1000; /* Higher z-index to ensure header is on top */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+.logo {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav li {
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav li a:hover {
+    color: orangered;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto 20px; /* Adjust margin to give space below header */
+    padding: 20px;
+    z-index: 0; /* Lower z-index for content */
+}
+
+#slide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Add smooth transform transition */
+}
+
+.item:hover img {
+    transform: scale(1.05); /* Scale up the image on hover */
+}
+
+.name {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+}
+
+.description {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the backface for smoother transition */
+    transform: rotateY(180deg);
+    transition: transform 0.5s ease;
+}
+
+.item:hover .description {
+    transform: rotateY(0deg); /* Rotate back to show description on hover */
+}
+
+footer {
+    background-color: dimgray;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+}
