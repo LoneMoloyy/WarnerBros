@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+    <title>Warner Bros</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Warner Bros</a>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Movies.html">Movies</a></li>
+      <li><a href="Series.html">Series</a></li>
+      <li><a href="Cartoons.html">Cartoons</a></li>
+      <li><a href="About us.html">About Us</a></li>
+    </ul>
+  </header>
+  <div class="banner">
+    <div class="content thelittlemermaid active">
+      <img src="images/thelittlemermaid.jpg" alt="The Little Mermaid" class="movie-title">
+      <h4>
+      <span>2023</span><span><i>12+</i></span>
+      <span>2h 14min</span><span>Romance</span>
+      </h4>
+      <p>A young mermaid makes a deal with a sea witch to trade her beautiful voice for human legs so she can discover the world above water and impress a prince.</p>
+    <div class="button">
+      <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+      <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+    </div>
+    </div>
+    <div class="content background-entergalactic">
+      <img src="images/bg-entergalactic.jpg" alt="Entergalactic" class="movie-title">
+      <h4>
+      <span>2022</span><span><i>16+</i></span>
+      <span>1h 33min</span><span>Romcom</span>
+      </h4>
+      <p>Jabari, a charming, streetwear-clad artist on the cusp of real success. After a chance run-in with his cool new photographer neighbor, Meadow, Jabari has to figure out whether he can make space for love in his life.</p>
+    <div class="button">
+      <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+      <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+    </div>
+    </div>
+    <div class="content background-thecrowdedroom ">
+      <img src="images/bg-the crowded room.png" alt="The Crowded Room" class="movie-title">
+      <h4>
+      <span>2023</span><span><i>16+</i></span>
+      <span>43min</span><span>Drama</span>
+      </h4>
+      <p>In Manhattan in the summer of 1979, a young man is arrested for a shocking crime, and an unlikely investigator must solve the mystery behind it before the true criminal strikes again.</p>
+    <div class="button">
+      <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+      <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+    </div>
+    </div>
+    <div class="content background-HTGAWM ">
+      <img src="images/bg-HTGAWM.png" alt="How to Get Away With Murder" class="movie-title">
+      <h4>
+      <span>2014</span><span><i>16+</i></span>
+      <span>53min</span><span>Drama</span>
+      </h4>
+      <p>A group of ambitious law students and their brilliant criminal defense professor become involved in a twisted murder plot that promises to change the course of their lives.</p>
+    <div class="button">
+      <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+      <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+    </div>
+    </div>
+    <div class="content background-ginny">
+      <img src="images/bg-ginny.png" alt="Ginny and Georgia" class="movie-title">
+      <h4>
+      <span>2019</span><span><i>16+</i></span>
+      <span>47min</span><span>Drama</span>
+      </h4>
+      <p>Ginny Miller, an angsty fifteen-year-old, often feels more mature than her thirty-year-old mother, the irresistible and dynamic Georgia Miller.</p>
+    <div class="button">
+      <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+      <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+    </div>
+    </div>
+    <div class="carousel-box">
+      <div class="carousel">
+        <div 
+          class="carousel-item"
+          onClick="changeBg('bg.jpg', 'thelittlemermaid');"
+          >
+          <img src="images/Thelittlemermaid2.jpg" alt="">
+        </div>
+        <div class="carousel-item" onClick="changeBg('background-entergalactic.jpg', 'bg-entergalactic');">
+          <img src="images/Entergalactic.png" alt="">
+        </div>
+        <div class="carousel-item" onClick="changeBg('background-thecrowdedroom.avif', 'bg-the crowded room');">
+          <img src="images/thecrowdedroom.jpg" alt="">
+        </div>
+        <div class="carousel-item" onClick="changeBg('background-HTGAWM.png', 'bg-HTGAWM');">
+          <img src="images/HTGAWM.jpg" alt="">
+        </div>
+        <div class="carousel-item" onClick="changeBg('background-ginny.webp', 'bg-ginny');">
+          <img src="images/ginnygeorgia.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <a href="#" class="play"><i class="fa fa-play-circle" aria-hidden="true"></i>Watch Trailer</a>
+    <ul class="sci">
+       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+       <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+       <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <div class="trailer">
+    <video id="myVideo" width="900" height="640" controls>
+      <source src="trailer videos/The Little Mermaid _ Official Trailer.mp4" type="video/mp4">
+    </video>
+  </video>
+    <img class="close" src="images/close.png" 
+    alt=""
+    />
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="home.js"></script>
+ <script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+ </script>
+</body>
+<footer>
+  <p>© Warner Bros 2024 All Rights Reserved</p>
+</footer>
+</html>
+
+
